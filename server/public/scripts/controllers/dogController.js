@@ -6,7 +6,7 @@ app.controller("DogController", ["$scope", "$http", "DataFactory", function($sco
   $scope.getRandomPet = function() {
     var query = baseURL + 'pet.getRandom';
     query += '?key=' + key;
-    query += '&animal=barnyard';
+    query += '&animal=dog';
     query += '&output=basic';
     query += '&format=json';
 
