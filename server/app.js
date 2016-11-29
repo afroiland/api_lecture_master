@@ -4,7 +4,7 @@ var path = require('path');
 // var bodyParser = require('body-parser');
 var dogs = require('./routes/dogs');
 var cats = require('./routes/cats');
-var fish = require('./routes/fish');
+var reptiles = require('./routes/reptiles');
 
 // app.use(bodyParser.json());
 // Serve back static files
@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, './public')));
 
 app.use('/dogs', dogs);
 app.use('/cats', cats);
-app.use('/fish', fish);
+app.use('/reptiles', reptiles);
 
 app.get("/jq", function(req,res,next){
     res.sendFile(path.join(__dirname, "./public/views/indexjq.html"));

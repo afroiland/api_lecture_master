@@ -12,10 +12,10 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'CatController',
       controllerAs: 'catcon'
     })
-    .when('/fish', {
-      templateUrl: '/views/templates/fish.html',
-      controller: 'FishController',
-      controllerAs: 'fishcon'
+    .when('/reptiles', {
+      templateUrl: '/views/templates/reptiles.html',
+      controller: 'ReptileController',
+      controllerAs: 'repcon'
     })
     .otherwise({
       redirectTo: '/dogs'
