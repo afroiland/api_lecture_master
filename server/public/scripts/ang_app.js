@@ -1,7 +1,7 @@
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['ngRoute']);
 
 myApp.controller("petController", ["$scope", "$http", function($scope, $http) {
-  var key = 'b900e0d5e332753a460a64eaa8de00fd';
+  var key = process.env.PETFINDER_KEY;
   var baseURL = 'http://api.petfinder.com/';
 
   $scope.getRandomPet = function() {
